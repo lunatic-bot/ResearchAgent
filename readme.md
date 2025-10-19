@@ -1,28 +1,28 @@
-# 🧠 MiniResearchAgent (Gemini Edition)
+# MiniResearchAgent (Gemini Edition)
 
 A **minimal end-to-end AI Agent** powered by **Google Gemini 1.5 Pro** and **LangChain**.
 This project demonstrates how to build an autonomous AI assistant that can:
 
-- 🕵️ Search the web
-- 🧩 Reason over information
-- 💬 Remember previous interactions
-- 📚 Summarize and explain complex topics
+- Search the web
+- Reason over information
+- Remember previous interactions
+- Summarize and explain complex topics
 
 It’s designed as a **learning project** — perfect for anyone who wants to **understand AI agents by building one from scratch**.
 
 ---
 
-## 🚀 Features
+## Features
 
-✅ Uses **Gemini 1.5 Pro** as the reasoning engine
-✅ Integrates **DuckDuckGo Search** for real-time information
-✅ Maintains **short-term memory** across turns
-✅ Built using **LangChain Agents** and **ReAct reasoning**
-✅ Fully runnable in a single Python script
+Uses **Gemini 1.5 Pro** as the reasoning engine
+Integrates **DuckDuckGo Search** for real-time information
+Maintains **short-term memory** across turns
+Built using **LangChain Agents** and **ReAct reasoning**
+Fully runnable in a single Python script
 
 ---
 
-## 🧩 Architecture Overview
+## Architecture Overview
 
 | Component                  | Role                                                               |
 | -------------------------- | ------------------------------------------------------------------ |
@@ -34,7 +34,7 @@ It’s designed as a **learning project** — perfect for anyone who wants to **
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Clone or create the file
 
@@ -65,7 +65,7 @@ Or directly paste it in the Python file.
 
 ---
 
-## ▶️ Running the Agent
+## Running the Agent
 
 ```bash
 python mini_research_agent_gemini.py
@@ -80,7 +80,7 @@ Agent: ...
 
 ---
 
-## 💬 Example Prompts
+## Example Prompts
 
 Try questions like:
 
@@ -91,7 +91,7 @@ Try questions like:
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ```text
 User Query → Gemini (LLM reasoning)
@@ -110,21 +110,21 @@ It follows the **ReAct pattern** (Reasoning + Acting), where the agent:
 
 ---
 
-## 🧠 Learn by Extending
+## Learn by Extending
 
 After getting this running, try adding:
 
-| Upgrade                     | What You’ll Learn                     |
-| --------------------------- | ------------------------------------- |
-| 🗃️ Vector Memory (ChromaDB) | Persistent memory & embeddings        |
-| 🧮 Python REPL Tool         | Code execution capabilities           |
-| 🧾 File I/O                 | Read research papers, write summaries |
-| 💡 Reflection               | Self-evaluation & improvement loops   |
-| 🖥️ Streamlit UI             | Interactive web interface             |
+| Upgrade                  | What You’ll Learn                     |
+| ------------------------ | ------------------------------------- |
+| Vector Memory (ChromaDB) | Persistent memory & embeddings        |
+| Python REPL Tool         | Code execution capabilities           |
+| File I/O                 | Read research papers, write summaries |
+| Reflection               | Self-evaluation & improvement loops   |
+| Streamlit UI             | Interactive web interface             |
 
 ---
 
-## 📚 Tech Stack
+## Tech Stack
 
 - **Language Model:** Google Gemini 1.5 Pro
 - **Framework:** LangChain
@@ -134,7 +134,7 @@ After getting this running, try adding:
 
 ---
 
-## 🧭 Project Goals
+## Project Goals
 
 This project aims to help you:
 
