@@ -20,14 +20,17 @@ from langchain.tools import DuckDuckGoSearchRun
 from langchain.memory import ConversationBufferMemory
 
 # -----------------------------
-# 🔧 1. Configuration
+# 1. Configuration
 # -----------------------------
+from dotenv import load_dotenv
+load_dotenv()
+google_api_key=os.getenv("GEMINI_API_KEY")
 
 # Set your Google Gemini API key (get from https://makersuite.google.com/)
-os.environ["GOOGLE_API_KEY"] = "YOUR_GOOGLE_API_KEY"
+# os.environ["GOOGLE_API_KEY"] = "YOUR_GOOGLE_API_KEY"
 
 # -----------------------------
-# 🧠 2. Initialize Core Components
+# 2. Initialize Core Components
 # -----------------------------
 
 # Gemini model as the agent's "brain"
@@ -40,7 +43,7 @@ memory = ConversationBufferMemory(memory_key="chat_history", return_messages=Tru
 search_tool = DuckDuckGoSearchRun()
 
 # -----------------------------
-# 🤖 3. Create the Agent
+# 3. Create the Agent
 # -----------------------------
 tools = [search_tool]
 
@@ -53,7 +56,7 @@ agent = initialize_agent(
 )
 
 # -----------------------------
-# 💬 4. Agent Interaction Loop
+# 4. Agent Interaction Loop
 # -----------------------------
 print("\n=== 🧠 MiniResearchAgent (Gemini Edition) ===")
 print("Ask research or factual questions. Type 'exit' to quit.\n")
