@@ -1,18 +1,3 @@
-"""
-Minimal AI Agent — "MiniResearchAgent (Gemini Edition)"
--------------------------------------------------------
-Uses Google Gemini 1.5 Pro as the reasoning engine.
-
-Features:
-- LLM (Gemini) for reasoning
-- DuckDuckGo web search tool
-- Conversation memory
-- Interactive CLI loop
-
-Requirements:
-    pip install google-generativeai langchain langchain-google-genai duckduckgo-search chromadb
-"""
-
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import initialize_agent, AgentType
@@ -58,13 +43,13 @@ agent = initialize_agent(
 # -----------------------------
 # 4. Agent Interaction Loop
 # -----------------------------
-print("\n=== 🧠 MiniResearchAgent (Gemini Edition) ===")
+print("\n===MiniResearchAgent (Gemini Edition) ===")
 print("Ask research or factual questions. Type 'exit' to quit.\n")
 
 while True:
     user_input = input("You: ")
     if user_input.lower() in ["exit", "quit", "bye"]:
-        print("Agent: Goodbye! 👋")
+        print("Agent: Goodbye!")
         break
 
     try:
